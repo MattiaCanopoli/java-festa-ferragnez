@@ -25,15 +25,25 @@ public class CheckGuest {
 
 		// WHILE LOOP
 
-		int i = 0;
-		while (i < guestList.length) {
-			// check if user input matches the current array element.
-			// if true, sets canEnter variable to true and break the loop
+//		int i = 0;
+//		while (i < guestList.length) {
+//			// check if user input matches the current array element.
+//			// if true, sets canEnter variable to true and break the loop
+//			if (guestList[i].toLowerCase().equals(guestName.toLowerCase())) {
+//				canEnter = true;
+//				break;
+//			}
+//			i++;
+//		}
+
+		// FOR LOOP
+
+		for (int i = 0; i < guestList.length; i++) {
 			if (guestList[i].toLowerCase().equals(guestName.toLowerCase())) {
 				canEnter = true;
 				break;
 			}
-			i++;
+
 		}
 
 		// print different string based on canEnter value
