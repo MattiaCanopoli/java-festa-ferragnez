@@ -47,7 +47,7 @@ public class CheckGuest {
 		}
 
 		// print different string based on canEnter value
-		if (canEnter == true) {
+		if (canEnter) {
 			System.out.println("Prego, la stanno aspettando");
 		} else {
 			System.out.println("Siamo spiacenti, ma il suo nome non è in lista");
